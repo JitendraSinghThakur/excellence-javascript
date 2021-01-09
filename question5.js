@@ -1,0 +1,27 @@
+//Question 5
+//Assume there is a object of this format 
+//var obj = {
+// “id” : 4, “name” : “abc”,
+// “id” : 10, “name” : “ab2”,
+// “id” : 5, “name” : “abc3”,
+// “id” : 6, “name” : “abc5”
+//}
+//It can be a dictionary or java object, as per your language of choice. But its key/value pair dictionary simply.
+
+//Write a code to sort the object by id 
+//I.e final output should have objected sort by id’s
+
+
+//Above given sample object invalid for performing sort operation. Excepting Arrary type
+
+
+
+	var obj = [
+	  { id:4,name:"abc"},
+	  {id:10,name:"ab2"},
+	  {id:5,name:"ab3"},
+	  {id:6,name:"ab5"}	  
+	];
+
+	let newObj = obj.sort(function(a, b){return a.id - b.id});
+	console.log(newObj);

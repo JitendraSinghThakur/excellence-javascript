@@ -16,12 +16,12 @@
 
 
 
-	var obj = [
-	  { id:4,name:"abc"},
-	  {id:10,name:"ab2"},
-	  {id:5,name:"ab3"},
-	  {id:6,name:"ab5"}	  
-	];
+var obj = [
+	{ id: 4, name: "abc" },
+	{ id: 10, name: "ab2"},
+	{ id: 5, name: "ab3" },
+	{ id: 6, name: "ab5" }
+];
 
-	let newObj = obj.sort(function(a, b){return a.id - b.id});
-	console.log(newObj);
+let newObj = obj.sort(function (a, b) { return a.id - b.id });
+console.log(newObj);

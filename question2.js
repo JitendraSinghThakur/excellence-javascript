@@ -4,15 +4,17 @@
 //a) 00110001001110 - Output :3 [Max num of consecutive 1's is 3]
 //b) 1000010001 - Output :1 [Max num of consecutive 1's is 1]
 
-var nums=[0,0,1,1,0,0,0,1,0,0,1,1,1,0]
+var nums = [0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0]
 
- function findMaxConsecutiveOnes(nums) {
+function findMaxConsecutiveOnes() {
 
-  let largest = 0;
+    let largest = 0;
     let current = 0;
-    for (let i = 0; i<nums.length; i++) {
+    for (let i = 0; i < nums.length; i++) {
         nums[i] === 0 ? current = 0 : current++;
         if (current > largest) largest = current;
     };
-    console.log("Output-"+largest+"[Max num of consecutive 1's is "+largest+"]");
+    console.log("Output-" + largest + "[Max num of consecutive 1's is " + largest + "]");
 }
+
+findMaxConsecutiveOnes();

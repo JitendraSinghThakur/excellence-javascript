@@ -4,8 +4,8 @@
 
 
 
-		let myarry=[1,2,3,4,4,5,6,7,8,9,10];
-		let myduplicate = arr=>arr.filter((item,index)=>arr.indexOf(item) !=index)
-		console.log(myduplicate(myarry));
-	  
+let myarry = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10];
+let myduplicate = arr => arr.filter((item, index) => arr.indexOf(item) != index)
+console.log(myduplicate(myarry));
+
 
